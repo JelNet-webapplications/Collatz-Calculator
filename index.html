@@ -1,0 +1,54 @@
+
+<!--
+    created by vivaloz
+    started 26-07-22
+    version 1.0.0 released on xxx
+    published by jelcraft
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Collatz Conjecture Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id='bar' class="bar">
+            <p id="title">Collatz Conjecture Calculator</p>
+            <div class="homepageLink">
+                <a id="homepagelink" href="http://jelcraft.tk/">Homepage</a>
+            </div>
+        </div>
+        <div class="split left" id="splitleft">
+            <div class="input">
+                <p><b>Number</b></p>
+                <input type="number" id="inputNumber" min="0">
+            </div>
+            <div class="checkboxList">
+                <label for="checkboxProcess">Show process:</label> 
+                <input type="checkbox" id="checkboxProcess" onclick="toggleCheck()">
+            </div>
+            <div class="checkboxList">
+                <label for="checkboxTable">Show table:</label> 
+                <input type="checkbox" id="checkboxTable" onclick="toggleCheck()">
+            </div>
+            <div class="checkboxList">
+                <label for="checkboxGraph">Show graph:</label> 
+                <input type="checkbox" id="checkboxGraph" onclick="toggleCheck()">
+            </div>
+            <div class="submitButton" id="submitButton">
+                <button type="button" onclick="calculate()">Process</button>
+            </div>
+        </div>
+        <div class="split right" id="splitright">
+            <div class="errorAndProcess" id="errorAndProcess">
+                <p id="errorMessage-input=null">You have not entered a number.</p>
+                <p id="errorMessage-check=null">No display option has been checked.</p>
+                <p class='displayProcess' id="displayProcess"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

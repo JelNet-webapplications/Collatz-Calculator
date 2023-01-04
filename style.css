@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* margin: top right bottom left; */
+html {
+    overflow-y: scroll;
+}
+body {
+    margin: 0px;
+}
+.bar p {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    max-height: 35px;
+}
+.bar {
+    background-color: rgb(37, 37, 37);
+    overflow: hidden;
+    max-height: 100px;
+}
+.homepageLink {
+    max-width: 124px;
+    position: absolute;
+    height: 45px;
+    right: 1px;
+    top: 27.5px;
+}
+.homepageLink a {
+    color: #f2f2f2;
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: metropolis;
+}
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+    top: 100px;
+}
+.left {
+    width: 202.64px;
+    left: 0;
+    background-color: #90DE43;
+}
+.left label {
+    margin: 10px;
+}
+.right {
+    width: 85%;
+    left: 202.64px;
+    background-color: white;
+    top: 100px;
+}
+.right p {
+    display: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px 0px 0px 10px;
+    overflow-y: auto;
+}
+.checkboxList {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.input {
+    margin: 0px 0px 0px 10px;
+}
+.input p {
+    margin: 0px 0px 5px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.submitButton {
+    margin: 10px;
+}
+.submitButton button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    width: 177px;
+    font-size: 15px;
+    background-color: white;
+    border-color: rgb(129, 127, 127);
+    border-width: 2px;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: gainsboro;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(85, 85, 85);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(125, 125, 125);
+}
